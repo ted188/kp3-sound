@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10131f">
+    <title>Natural Growth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/p5.js"></script>
+    <script src="js/addons/p5.sound.min.js"></script>
+</head>
+<body>
+    <main class="app-shell">
+        <header class="page-header">
+            <p class="eyebrow">AUDIO-REACTIVE GROWTH</p>
+            <h1>Natural Growth</h1>
+            <p class="intro">Watch an organic structure grow and branch with your music.</p>
+        </header>
+
+        <section class="player-card" aria-label="Music-driven natural growth visualizer">
+            <div class="visualizer" id="visualizer-canvas" aria-label="Growing branching structure"></div>
+            <div class="player-controls">
+                <input id="audio-file" type="file" accept="audio/*">
+                <label class="file-picker" for="audio-file">
+                    <span aria-hidden="true">＋</span>
+                    Choose audio
+                </label>
+                <button id="play-button" type="button" disabled>Play</button>
+                <p id="status" class="status" role="status" aria-live="polite">Choose a local audio file to begin.</p>
+            </div>
+        </section>
+
+        <p class="hint">Your audio stays on your device.</p>
+    </main>
+    <script src="sketch.js"></script>
+</body>
+</html>
